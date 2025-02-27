@@ -1,0 +1,109 @@
+<style>
+  
+  * { box-sizing: border-box; }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+	
+  .frame {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 5px solid black;
+    background-image: linear-gradient(#ac3497, #5434c3);
+  }
+
+/*   .table {
+    width: 100%;
+    height: 30%;
+    background-color: white;
+    position: absolute;
+    bottom: 0px;
+    transform: translate(20px, 20px) rotate(3deg);
+    z-index: ;
+  } */
+  
+  .cup {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%/15%;
+    position: absolute;
+    left: 75px;
+  }
+  
+  .lip {
+    width: 100%;
+    height: 35%;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .inside {
+    width: 95%;
+    height: 30%;
+    background-color: #dddddd;
+    border-radius: 50%;
+    position: absolute;
+    left: 2.5%;
+    top: 1.5%;
+  }
+  
+  .blue-stripe {
+    width: 100%;
+    height: 30%;
+    border-radius: 0% 0% 50% 50%;
+    background-color: blue;
+    position: absolute;
+  }
+  
+  .white-stripe{
+    width: 100%;
+    height: 30%;
+    border-radius: 0% 0% 50% 50%;
+    background-color: white;
+    position: absolute;
+  }
+  
+  .cup-bottom{
+    width: 80%;
+    height: 30%;
+    border-radius: 0% 0% 50% 50% / 0% 0% 50% 50%;
+    background-color: white;
+    position: absolute;
+    transform: translate(12.5%, 300%);
+  }
+
+</style>
+
+
+<div class="frame">
+	<!-- ur HTML code goes here -->  
+  <div class="table"></div>
+  <div class="cup" style="top: 150px">
+    <div class="lip" style="z-index:15"></div>
+    <div class="inside" style="z-index:16"></div>
+    <div class="stripe blue-stripe" style="top:20px; z-index: 14"></div>
+    <div class="stripe white-stripe" style="top:35px; z-index: 13"></div>
+    <div class="stripe blue-stripe" style="top:50px; z-index: 12"></div>
+    <div class="stripe white-stripe" style="top:65px; z-index: 11"></div>
+    <div class="stripe blue-stripe" style="top:80px; z-index: 10"></div>
+    <div class="stripe white-stripe" style="top:85px; z-index: 9; border: 1px solid black"></div>
+  </div>
+  <div class="cup" style="top: 235px">
+    <div class="lip" style="z-index:7"></div>
+    <div class="inside" style="z-index:8"></div>
+    <div class="stripe blue-stripe" style="top:20px; z-index: 6"></div>
+    <div class="stripe white-stripe" style="top:35px; z-index: 5"></div>
+    <div class="stripe blue-stripe" style="top:50px; z-index: 4"></div>
+    <div class="stripe white-stripe" style="top:65px; z-index: 3"></div>
+    <div class="stripe blue-stripe" style="top:80px; z-index: 2"></div>
+    <div class="cup-bottom" style="z-index: 1"></div>
+  </div>
+</div>
