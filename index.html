@@ -16,7 +16,7 @@
 	
   .frame {
     position: relative;
-    width: 500px;
+    width: 550px;
     height: 500px;
     border: 5px solid black;
     background-image: linear-gradient(#ac3497, #5434c3);
@@ -100,7 +100,8 @@
     position: absolute;
     left: 20px;
     top: 32px;
-    clip-path: polygon(0 0, 0% 100%, 100% 50%);
+    clip-path: polygon(0% 0%, 23% 17%, 59% 33%, 100% 50%, 69% 70%, 41% 82%, 0% 100%);
+
   }
   
   .star{
@@ -108,14 +109,16 @@
     height: 30%;
     background-color: #f2f2f2;
     position: absolute;
-    left: 25px;
-    top: 55px;
-    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    left: 23px;
+    top: 58px;
+    clip-path: polygon(50% 0, 61% 32%, 98% 32%, 70% 54%, 80% 90%, 52% 69%, 22% 90%, 34% 56%, 4% 35%, 39% 33%);
+
   }
   
   .handle{
     width: 30%;
     height: 60%;
+    background: linear-gradient(90deg, rgba(255,255,255, 1) 0%, rgba(255,255,255,0) 50%);
     background-color: #f2f2f2;
     position: absolute;
     left: -25px;
@@ -144,7 +147,8 @@
     height: 30%;
     background-color: #f6ef00;
     border-radius: 50%/40%;
-    transform: translate(-2.5px)
+    transform: translate(-2.5px);
+    position: absolute;
   }
   
   .cap-top{
@@ -152,9 +156,138 @@
     height: 80%;
     border-radius: 50%;
     background: radial-gradient(ellipse, rgba(246,232,0,1) 58%, rgba(255,242,0,1) 60%);
-    transform: translate(2.5px, 2.5px)
+    transform: translate(2.5px, 2.5px);
+    position: absolute;
+  }
+  
+  .base{
+    width: 215px;
+    height: 30%;
+    border-radius: 50%;
+    background-color: #cccccc;
+    position: absolute;
+    transform: translate(-2.5px, 215px);
   }
 
+  .cafetera{
+    width: 200px;
+    height: 250px;
+    background-color: orange;
+    position: absolute;
+    
+  }
+  
+  .lid{
+    width: 192px;
+    height: 70px;
+/*     background-color: #fc4903; */
+    background: radial-gradient(ellipse at 48% 60%, rgba(217,80,0,0) 53%, rgba(240,240,240,0.3) 59%, rgba(217,80,0,0) 65%), radial-gradient(ellipse at 48% 60%, rgba(217,80,0,0) 36%, rgba(240,240,240,0.5) 42%, rgba(217,80,0,0) 48%), linear-gradient(rgba(255,85,0,1) 0%, rgba(255,85,0,1) 100%);
+    border-radius: 50%;
+    position: absolute;
+    left: 4px;
+    top: -20px;
+  }
+  
+  .lid-bit{
+    width: 40px;
+    height: 35px;
+    position: absolute;
+    top: -50px;
+    left: 76px;
+    border-radius: 50% 50% 50% 50% / 15% 15% 0% 0%;
+    background: radial-gradient(ellipse at 50% -500%, rgba(51,51,51,1) 60%, rgba(0,0,0,1) 90%);
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+  }
+  
+  .panel-one{
+    width: 30px;
+    height: 200px;
+    position: absolute;
+    background: linear-gradient(182deg, rgba(255,226,0,1) 40%, rgba(255,94,0,1) 43%);
+    clip-path: polygon(12% 7%, 77% 10%, 93% 99%, 28% 91%);
+  }
+  
+  .panel-two{
+    width: 55px;
+    height: 190px;
+    position: absolute;
+    left: 23px;
+    top: 20px;
+    background: linear-gradient(89deg, rgba(217,80,0,1) 11%, rgba(255,96,0,1) 4%);
+    background-color: #ff6000;
+    clip-path: polygon(0% 0%, 91% 5%, 90% 97%, 8% 93.5%);
+  }
+  
+  .panel-three{
+    width: 55px;
+    height: 200px;
+    position: absolute;
+    left: 70px;
+    top: 20px;
+    background: linear-gradient(89deg, rgba(217,80,0,1) 11%, rgba(250,85,0,1) 4%);
+    clip-path: polygon(0% 4.5%, 100% 6%, 91% 93%, 5% 92%);
+  }
+  
+  .panel-four{
+    width: 55px;
+    height: 195px;
+    position: absolute;
+    left: 115px;
+    top: 20px;
+    background: linear-gradient(91deg, rgba(217,80,0,1) 20%, rgba(250,85,0,1) 4%);
+    clip-path: polygon(17% 6%, 99% 3%, 84% 93%, 9% 95%);
+  }
+  
+  .panel-five{
+    width: 50px;
+    height: 210px;
+    position: absolute;
+    left: 150px;
+    background: linear-gradient(93deg, rgba(217,80,0,1) 38%, rgba(255,96,0,1) 4%);
+    clip-path: polygon(39% 12.6%, 92% 7%, 69% 89%, 22% 96%);
+  }
+  
+  .pot-handle{
+    width: 50px;
+    height: 180px;
+    position: absolute;
+    left: 100px;
+    top: 30px;
+    background: radial-gradient(circle at 50% 20%, rgba(0,0,0,1) 0%, rgba(100,100,100,1) 20%, rgba(0,0,0,1) 80%);
+    clip-path: polygon(18% 0%, 62% 0%, 71% 11%, 78% 26%, 83% 40%, 84% 52%, 85% 70%, 86% 86%, 86% 95%, 57% 100%, 32% 95%, 34% 80%, 34% 64%, 34% 53%, 33% 40%, 29% 31%, 21% 27%, 17% 25%);
+  }
+  
+  .thing-under-panels{
+    width: 165px;
+    height: 100px;
+    position: absolute;
+    left: 15px;
+    top: 140px;
+    background: linear-gradient(90deg, rgba(255,96,0,1) 10%, rgba(217,80,0,1) 55%, rgba(255,96,0,1) 90%);
+    border-radius: 50%/15%
+  }
+  
+  .metal-base{
+    width: 200px;
+    height: 250px;
+    background: linear-gradient(rgba(170,170,170,1) 2%, rgba(238,238,238,1) 42%, rgba(170,170,170,1) 70%);
+    position: absolute;
+    left: -3px;
+    top: 150px;
+    border-radius: 50%/15%;
+    clip-path: polygon(13% 0%, 87.2% 0%, 100% 100%, 0% 100%);
+  }
+  
+  .bustelo-reflection{
+    width: 80px;
+    height: 150px;
+    background: linear-gradient(20deg, rgba(255,0,0,0.7) 53%, rgba(255,235,0,0.7) 54%);
+    position: absolute;
+    left: 0px;
+    top: 70px;
+    clip-path: polygon(20% 0%, 70% 0, 50% 100%, 0% 90%);
+  }
+  
 </style>
 
 
@@ -183,12 +316,16 @@
     <div class="cup-bottom" style="z-index: 0"></div>
   </div>
   <div class="bustelo" style="left:100px; top:160px; z-index:100">
+    <div class="bustelo" style="z-index:0"></div>
+    <div class="base" style="z-index:-1"></div>
     <div class="yellow-part"></div>
     <div class="cap">
     <div class="cap-top"></div>
     </div>
   </div>
-    <div class="bustelo" style="left:130px; top:100px; z-index:50">
+  <div class="bustelo" style="left:130px; top:100px; z-index:50">
+    <div class="bustelo" style="z-index:0"></div>
+    <div class="base" style="z-index:-1"></div>
     <div class="yellow-part"></div>
     <div class="cap">
     <div class="cap-top"></div>
@@ -208,5 +345,19 @@
     <div class="stripe blue-stripe" style="top:80px; z-index: 2"></div>
     <div class="stripe white-stripe" style="top:85px; z-index: 1"></div>
     <div class="cup-bottom" style="z-index: 0"></div>
+  </div>
+  <div class="cafetera" style="left: 320px; top: 75px; z-index: 200">
+    <div class="metal-base">
+      <div class="bustelo-reflection"></div>
+    </div>
+    <div class="thing-under-panels"></div>
+    <div class="lid"></div>
+    <div class="lid-bit"></div>
+    <div class="panel-one"></div>
+    <div class="panel-two"></div>
+    <div class="panel-three"></div>
+    <div class="panel-four"></div>
+    <div class="panel-five"></div>
+    <div class="pot-handle"></div>
   </div>
 </div>
